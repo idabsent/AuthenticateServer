@@ -27,7 +27,7 @@ import java.util.Base64
 import java.util.concurrent.TimeUnit
 
 val Route.userRepository : UserRepository
-    get() = UserRepositoryImpl
+    get() = Users
 
 fun Route.authLogin() {
     val userRepository = userRepository
